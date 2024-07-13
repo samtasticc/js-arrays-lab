@@ -23,3 +23,30 @@ Complete Exercise 2 in the space below:
 foods.push('pizza', 'cheeseburger')
 
 console.log('Exercise 2 result:', foods);
+
+/*
+Exercise 3: Insert at the beginning
+
+1) Insert the string 'taco' at the beginning of the `foods` array.
+
+Complete Exercise 3 in the space below:
+*/
+
+foods.unshift('taco')
+
+console.log('Exercise 3 result:', foods);
+
+/*
+Exercise 4: Access an array element
+
+1) Retrieve the 'pizza' string from the array based on its position (index) in
+   the array.  
+
+2) Assign it to a variable called `favFood`.
+
+Complete Exercise 4 in the space below:
+*/
+
+foods.splice(1, 2, 'pizza') // ! ask why using 2 instead of 1 removed 'pizza'
+const favFood = 'pizza'
+console.log('Exercise 4 result:', favFood);
