@@ -6,7 +6,7 @@ Exercise 1: Define an empty array
 Exercise 1 has been completed for you:
 */
 
-const foods = [];  
+const foods = [];
 
 console.log('Exercise 1 result:', foods);
 
@@ -106,5 +106,37 @@ const soyIdx = foods.indexOf('tofu')
 
 console.log('Exercise 8 result:', soyIdx); // ? returned the index, not the string. unsure if this is correct.
 
+/*
+Exercise 9: Joining elements
+
+1) Use the `join()` method to concatenate the strings in the `foods` array, 
+   separated by ' -> '. 
+
+2) Assign the result to a variable called `allFoods`. 
+
+Note: The final result should log as:
+'taco -> sushi -> cupcake -> tofu -> cheeseburger'
+
+Complete Exercise 9 in the space below:
+*/
+
+const allFoods = foods.join(' -> ')
+
+console.log('Exercise 9 result:', allFoods);
+
+/*
+Exercise 10: Check for an element
+
+1) Using the .includes() method, check if the `foods` array contains the string
+   'soup'.
+
+2) Assign the result to a variable called `hasSoup``.
+
+Complete Exercise 10 in the space below:
+*/
+
+const hasSoup = foods.includes('soup')
+
+console.log('Exercise 10 result:', hasSoup);
 
 
