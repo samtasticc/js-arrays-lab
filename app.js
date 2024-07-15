@@ -152,9 +152,9 @@ Complete Exercise 11 in the space below:
 */
 
 const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
-let odds = []
 
-function pickOddNums() {
+function pickOddNums(nums) {
+    let odds = []
     for (let i = 0; i < nums.length; i++) {
         // console.log(nums[i]);
         if (nums[i] % 2 !== 0) {
@@ -162,21 +162,13 @@ function pickOddNums() {
         }
     }
 
-    for (let i = 0; i < nums.length; i++) {
-        odds(nums[i])
-    }
-}
-// ? the code above did not return odd numbers within the odds array
-
-function updateOdds(number) {
-    if (number % 2) {
-        odds.push(number)
-    }
+    // for (let i = 0; i < nums.length; i++) {
+    //     // odds(nums[i])
+    // }
+    return odds
 }
 
-// ? the code above did not return odd numbers within the odds array
-
-console.log('Exercise 11 result:', odds);
+console.log('Exercise 11 result:', pickOddNums(nums));
 
 /*
 Exercise 12: FizzBuzz with arrays
@@ -196,25 +188,26 @@ Exercise 12: FizzBuzz with arrays
 
 Complete Exercise 12 in the space below:
 */
+const buzz = []
+const fizz = []
+const fizzbuzz = []
+function fizzBuzz(array) {
+    for (let nums of array) {
+        if (nums % 15 === 0)
+            fizzbuzz.push(nums)
+    }
+    if (num % 3 === 0) {
+        fizz.push(nums)
+    }
+    if (num % 5 === 0) {
+        buzz.push(nums)
+    }
+}
 
-// function fizzbuzz() {
-//     for (let i = 0; i <= 100; i++) {
-//         const nums = 1
-//         if (num % 3 && num % 5 === 0) {
-//         } else if (num % 3 === 0) {
-//         } else if (num % 5 === 0) {
-//         } else {
-//         }
-//     }
-// }
-
-// ? stuck because i couldn't figure out exercise 11 so I am not sure how I will figure out exercise 12.
-
-
-// console.log('Exercise 12 Results:');
-// console.log('  fizz:', fizz);
-// console.log('  buzz:', buzz);
-// console.log('  fizzbuzz:', fizzbuzz);
+console.log('Exercise 12 Results:');
+console.log('  fizz:', fizz);
+console.log('  buzz:', buzz);
+console.log('  fizzbuzz:', fizzbuzz);
 
 /*
 Exercise 13: Retrieve the Last Array
